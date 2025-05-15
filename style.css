@@ -1,0 +1,145 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+
+:root {
+    --black:white;
+    --purple: purple;
+    --light-color: #666;
+    --box-shadow: 0.5rem 1.5rem rgba(240, 231, 231, 0.5); /* Added alpha value */
+}
+
+* {
+    font-family: 'Andika', sans-serif; /* Corrected font name */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.2s linear; /* Fixed typo in transition */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth; /* Fixed typo in scroll-behavior */
+}
+
+body {
+    background-image: url('homeba.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position:top; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color:lightblue; /* Optional: fallback color if the image doesn't load */
+}
+
+
+/* Header */
+.header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background:white;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    border-bottom: 1px solid #ddd; /* Added a light color for better visibility */
+}
+
+.header .logo img {
+    margin-top: 5px;
+    height: 60%;
+    width: 50%;
+    display: inline-block; /* Corrected inline-block */
+}
+
+.header .nav-bar a { /* Corrected from .headbar to .nav-bar */
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--light-color);    
+}
+
+.header .nav-bar a:hover { /* Fixed typo */
+    color:lavender;
+    background: linear-gradient(120deg, #FAB2FF 40%, #663399);
+}
+
+.header .menubtn {
+    margin-right: 60px;
+}
+
+.header .menubtn button {
+    padding: 10px 45px;
+    text-align: center;
+    color: pink;
+    border: none;
+    background-image: linear-gradient(to right, #649bff,blue, #649bff);
+    border-radius: 10px;
+}
+
+/* Main */
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: space-between; /* Aligns children horizontally */
+}
+
+.main .center {
+    padding-left: 50px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.main .center h2 {
+    font-size: 1.5rem; /* Adjusted font-size for better readability */
+    text-transform: capitalize;
+    color: var(black);
+    margin-top: 150px;
+}
+
+.main .center h1 {
+    font-size: 4.2rem; /* Adjusted font-size for consistency */
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.main .center p {
+    margin-bottom: 20px;
+    font-size: 1.5rem; /* Adjusted font-size for consistency */
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 15px 0;
+    color: var(black); /* Fixed variable name */
+}
+
+.main .left button {
+    padding: 12px 45px;
+    text-align: center;
+    font-size: 1.4rem; /* Adjusted font-size for consistency */
+    color: #fff;
+    border: 1px solid; /* Consider adding a color to the border */
+    box-shadow: var(--box-shadow);
+    background-image: linear-gradient(to right, #649bff, #0070fa, #649bff);
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color:white;
+    color: black;
+    border: blue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em
+}
+
